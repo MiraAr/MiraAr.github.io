@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.2baaf648.chunk.js",
+    "main.js.map": "/static/js/main.2baaf648.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
+    "static/js/2.9abd6d30.chunk.js": "/static/js/2.9abd6d30.chunk.js",
+    "static/js/2.9abd6d30.chunk.js.map": "/static/js/2.9abd6d30.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.2c539400605c2c59011f584feaa76d85.js": "/precache-manifest.2c539400605c2c59011f584feaa76d85.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.9abd6d30.chunk.js.LICENSE.txt": "/static/js/2.9abd6d30.chunk.js.LICENSE.txt",
+    "static/media/adam-solomon-WHUDOzd5IYU-unsplash.jpg": "/static/media/adam-solomon-WHUDOzd5IYU-unsplash.1a0586c0.jpg",
+    "static/media/boardProject.png": "/static/media/boardProject.5ce6ceec.png",
+    "static/media/christopher-gower-m_HRfLhgABo-unsplash.jpg": "/static/media/christopher-gower-m_HRfLhgABo-unsplash.8a993a5d.jpg",
+    "static/media/e-commerce.png": "/static/media/e-commerce.2f191724.png",
+    "static/media/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg": "/static/media/jeremy-thomas-4dpAqfTbvKA-unsplash.f1050278.jpg",
+    "static/media/movieProject.png": "/static/media/movieProject.81298ccd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ceaf4b5f.js",
+    "static/js/2.9abd6d30.chunk.js",
+    "static/js/main.2baaf648.chunk.js"
+  ]
+}
