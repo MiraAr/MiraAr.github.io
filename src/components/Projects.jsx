@@ -43,6 +43,7 @@ const useStyles = makeStyles({
     margin: "3%",
   },
 });
+
 const projectsdetails = [
   {
     name: "CookBook",
@@ -84,6 +85,7 @@ const ProjectItem = (props) => {
           src={`${props.project.imageUrl}`}
           alt="project img"
           className={classes.projectImg}
+          onClick={() => openInNewTab(props.project.projectLink)}
         />
         <div className={classes.projectDescription}>
           <Typography
@@ -140,7 +142,7 @@ export default function Projects() {
         >
           Check Out My Latest Projects...{" "}
         </h1>
-        <Carousel>
+        <Carousel navButtonsAlwaysVisible="true">
           {projectsdetails.map((project,index) => (
             <>
               <ProjectItem project={project} key={index} />

@@ -8,16 +8,16 @@ const useStyles = makeStyles((theme) => ({
   form: {
     margin: "5% 0 2% 0",
     position: "relative",
-    background: "#ffffff90",
+    background: "#F9FAF5",
     padding: "2%",
-    borderRadius: "5%",
+    borderRadius: "10px",
     width: "30%",
     minWidth: "350px",
   },
   button: {
     marginTop: "1rem",
     color: "#473252",
-    borderColor: "#473252",
+    borderColor: "#81827F",
   },
 }));
 
@@ -31,13 +31,13 @@ const InputField = withStyles({
     },
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
-        borderColor: "#473252",
+        borderColor: "#81827F",
       },
       "&:hover fieldset": {
         borderColor: "#8F7EA0",
       },
       "&.Mui-focused fieldset": {
-        borderColor: "#473252",
+        borderColor: "#8F7EA0",
       },
     },
   },
@@ -66,7 +66,7 @@ export default function Contact() {
                   textTransform: "uppercase",
                 }}
               >
-                Contact me....
+                Contact me
               </Typography>
               <InputField
                 fullWidth={true}
@@ -114,7 +114,6 @@ export default function Contact() {
                 fullWidth={true}
                 endIcon={<SendIcon />}
               >
-                -----
               </Button>
             </Box>
           </Grid>
