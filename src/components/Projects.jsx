@@ -50,7 +50,7 @@ const projectsdetails = [
     description:
       "Create your own cookbook, add edit and delete recipies, project made with reactJs, firebase, styled with Material-UI",
     imageUrl: boardProjectimg,
-    projectLink: "https://createyou//rcookbook.netlify.app/",
+    projectLink: "https://createyou//cookbook.netlify.app/",
     projectGithub: " https://github.com/MiraAr/The-board-project",
   },
   {
