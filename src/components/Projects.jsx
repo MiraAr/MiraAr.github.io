@@ -58,7 +58,7 @@ const projectsdetails = [
     description:
       "Movie database project help to search and find more about movies, their casts, ratings, trailers, related movies, genres, and so on.using data from TMDB implemented with vanilla js and styled with Bootstrap",
     imageUrl: movieProjectimg,
-    projectLink: "https://movies-and-chill.netlify.app",
+    projectLink: "https://movielab.netlify.app/",
     projectGithub: "https://github.com/MiraAr/the-movie-project",
   },
   {
