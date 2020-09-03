@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Button } from "@material-ui/core";
+import { Typography, Button } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkIcon from "@material-ui/icons/Link";
 import movieProjectimg from "../imgs/projects/movieProject.png";
@@ -14,9 +14,6 @@ const useStyles = makeStyles({
     height: "100vh",
   },
   projectContainer: {
-    margin: "auto",
-    width: "75%",
-    height: " ",
     backgroundColor: "#8779B4",
     display: "flex",
     flexDirection: "row",
@@ -42,6 +39,10 @@ const useStyles = makeStyles({
   projectTitle: {
     margin: "3%",
   },
+  carouselContainer:{
+    margin: "auto",
+    width: "75%",
+  }
 });
 
 const projectsdetails = [
@@ -79,7 +80,6 @@ const ProjectItem = (props) => {
   }
 
   return (
-    <Grid>
       <div className={classes.projectContainer}>
         <img
           src={`${props.project.imageUrl}`}
@@ -117,7 +117,6 @@ const ProjectItem = (props) => {
           </Button>
         </div>
       </div>
-    </Grid>
   );
 };
 
@@ -142,13 +141,15 @@ export default function Projects() {
         >
           Check Out My Latest Projects...{" "}
         </h1>
+        <div className={classes.carouselContainer}>
         <Carousel navButtonsAlwaysVisible="true">
           {projectsdetails.map((project,index) => (
-            <>
+            
               <ProjectItem project={project} key={index} />
-            </>
+           
           ))}
         </Carousel>
+        </div>
       </Parallax>
     </div>
   );
