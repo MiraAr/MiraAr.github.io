@@ -113,8 +113,7 @@ export default function Contact() {
                 variant="outlined"
                 fullWidth={true}
                 endIcon={<SendIcon />}
-              >
-              </Button>
+              ></Button>
             </Box>
           </Grid>
         </Box>

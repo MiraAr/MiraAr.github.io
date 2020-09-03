@@ -39,10 +39,10 @@ const useStyles = makeStyles({
   projectTitle: {
     margin: "3%",
   },
-  carouselContainer:{
+  carouselContainer: {
     margin: "auto",
     width: "75%",
-  }
+  },
 });
 
 const projectsdetails = [
@@ -80,43 +80,43 @@ const ProjectItem = (props) => {
   }
 
   return (
-      <div className={classes.projectContainer}>
-        <img
-          src={`${props.project.imageUrl}`}
-          alt="project img"
-          className={classes.projectImg}
+    <div className={classes.projectContainer}>
+      <img
+        src={`${props.project.imageUrl}`}
+        alt="project img"
+        className={classes.projectImg}
+        onClick={() => openInNewTab(props.project.projectLink)}
+      />
+      <div className={classes.projectDescription}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="h2"
+          className={classes.projectTitle}
+        >
+          {props.project.name}
+        </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {props.project.description}
+        </Typography>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => openInNewTab(props.project.projectGithub)}
+          className={classes.icons}
+        >
+          <GitHubIcon />
+        </Button>
+        <Button
+          size="small"
+          color="primary"
           onClick={() => openInNewTab(props.project.projectLink)}
-        />
-        <div className={classes.projectDescription}>
-          <Typography
-            gutterBottom
-            variant="h5"
-            component="h2"
-            className={classes.projectTitle}
-          >
-            {props.project.name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {props.project.description}
-          </Typography>
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => openInNewTab(props.project.projectGithub)}
-            className={classes.icons}
-          >
-            <GitHubIcon />
-          </Button>
-          <Button
-            size="small"
-            color="primary"
-            onClick={() => openInNewTab(props.project.projectLink)}
-            className={classes.icons}
-          >
-            <LinkIcon />
-          </Button>
-        </div>
+          className={classes.icons}
+        >
+          <LinkIcon />
+        </Button>
       </div>
+    </div>
   );
 };
 
@@ -142,13 +142,11 @@ export default function Projects() {
           Check Out My Latest Projects...{" "}
         </h1>
         <div className={classes.carouselContainer}>
-        <Carousel navButtonsAlwaysVisible="true">
-          {projectsdetails.map((project,index) => (
-            
+          <Carousel navButtonsAlwaysVisible="true">
+            {projectsdetails.map((project, index) => (
               <ProjectItem project={project} key={index} />
-           
-          ))}
-        </Carousel>
+            ))}
+          </Carousel>
         </div>
       </Parallax>
     </div>
